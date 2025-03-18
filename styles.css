@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&family=Luckiest+Guy&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffffff; 
+    color: #4d4848; 
+    text-align: center;
+    padding: 20px; 
+    background-image: url('imagens/fundoindex.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    p {
+        font-size: 16px; 
+    }
+}
+
+/* Estilos para telas muito pequenas (celulares em modo retrato) */
+@media (max-width: 480px) {
+    body {
+        padding: 5px; 
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; 
+        max-width: 90%; 
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; 
+        max-width: 95%; 
+    }
+}
+
+.container {
+    background-color: #1b0342fd;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #1d65eb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.pergunta {
+    margin-bottom: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+label:hover {
+    background-color: #e9e9e9;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input#senha-admin {
+    max-width: 180px;
+}
+
+.nome-aluno {
+    max-width: 180px;
+}
+
+button {
+    background-color: #5a8ae2; 
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    
+}
+
+button:hover {
+    background-color: #274c83; 
+}
+
+#ranking-lista {
+    list-style-type: none; 
+    padding: 0;
+}
+
+input#nome-aluno {
+    max-width: 180px;
+}
+
+#caixa-nome input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#caixa-nome button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#caixa-nome button:hover {
+    background-color: #16410e;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    color: #d6d8e6;
+    text-shadow: 
+        -1px -1px  rgb(87, 82, 82), /* Sombra superior esquerda */
+        1px -1px 0 rgb(0, 0, 0),  /* Sombra superior direita */
+        -1px 6px 0 rgb(15, 18, 168),  /* Sombra inferior esquerda */
+        1px 1px 0 rgb(145, 129, 129);   /* Sombra inferior direita */
+}
+
+p, label, button {
+    font-family: 'comic neue', cursive;
+    font-size: 18px;
+}
+
+p {
+    color: #ffffff;
+}
+
+#limpar-dados {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #5f5251; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
+}
+
+#limpar-dados:hover {
+    background-color: #292828; 
+}
+
+#voltar {
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: #e63a2e; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+#voltar:hover {
+    background-color: #96261e;
+}
+
+#voltar-inicio {
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: #e63a2e; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+#voltar-inicio:hover {
+    background-color: #96261e;
+}
+
+ul {
+    color: #ccc;
+}
+
+#admin-login {
+    margin-top: 10px;
+}
+
+#admin-login input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1px;
+}
+
+#admin-login button {
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#admin-login button:hover {
+    background-color: #0056b3;
+}
+
+.resposta-correta {
+    background-color: green;
+    border-color: #c3e6cb;
+    color: white;
+}
+
+.resposta-incorreta {
+    background-color: red;
+    border-color: #f5c6cb;
+    color: white;
+}

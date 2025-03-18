@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="disciplina-titulo"></h1>
+        <div id="quiz-container"></div>
+
+            <button id="proxima-pergunta" onclick="proximaPergunta()">Próxima Pergunta</button>
+
+        <div>
+            <button id="voltar" onclick="voltarParaDisciplinas()">Voltar</button>
+        </div>
+
+        <!-- Caixa de nome (inicialmente oculta) -->
+        <div id="caixa-nome" style="display: none;">
+            <input type="text" id="nome-aluno" placeholder="Digite seu nome">
+            <button onclick="salvarNoRanking()">Salvar e Ver Ranking</button>
+        </div>
+        <script src="quiz.js"></script>
+</body>
+</html>
