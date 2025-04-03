@@ -15,7 +15,7 @@ O **Quiz Educacional** é um jogo de perguntas e respostas desenvolvido para ser
 **🛠 Tecnologias Utilizadas**  
 - **HTML5** → Estruturação do conteúdo.  
 - **CSS3** → Estilização e responsividade.  
-- **JavaScript (Vanilla)** → Lógica do quiz, temporizador e interatividade.
+- **JavaScript** → Lógica do quiz, temporizador e interatividade.
 
 
 **📌 Próximas Melhorias (To-Do)**    
