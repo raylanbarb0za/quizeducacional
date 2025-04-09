@@ -14,21 +14,3 @@ const ranking = JSON.parse(localStorage.getItem('ranking')) || [];
         if (ranking.length === 0) {
             rankingLista.innerHTML = `<li>Nenhum nome adicionado :(</li>`;
         }
-
-        function verificarAdmin() {
-            const senhaCorreta = '1234';
-            const senhaDigitada = document.getElementById('senha-admin').value;
-            const botaoLimpar = document.getElementById('limpar-dados');
-
-            if (senhaDigitada === senhaCorreta) {
-                botaoLimpar.style.display = 'block';
-                document.getElementById('admin-login').style.display = 'none';
-            } else {
-                alert('Senha incorreta!');
-            }
-        }
-
-        function limparDados() {
-            localStorage.removeItem('ranking');
-            location.reload();
-        }
