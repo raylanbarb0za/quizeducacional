@@ -27,7 +27,7 @@
                 if (localStorage.getItem("highContrast") === "true") {
                     document.body.classList.add("high-contrast");
                 }
-        
+        //botao de alto contraste
                 const btn = document.getElementById("toggle-contrast");
                 btn.textContent = document.body.classList.contains("high-contrast") ? "Remover Alto Contraste" : "Ativar Alto Contraste";
         
@@ -37,6 +37,7 @@
                     localStorage.setItem("highContrast", isActive);
                     btn.textContent = isActive ? "Remover Alto Contraste" : "Ativar Alto Contraste";
                 });
+
             });
         </script>
     
