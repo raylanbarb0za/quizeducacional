@@ -15,9 +15,13 @@
         <h1>Quiz Educacional</h1>
         <button onclick="window.location.href='disciplinas.html'">Iniciar</button>
         <button onclick="window.location.href='ranking.html'">Ranking</button>
+<<<<<<< HEAD
     
 <<<<<<< HEAD
 =======
+=======
+        
+>>>>>>> 313c6b6 (mudei o botao de lugar)
         <button id="toggle-contrast" aria-label="Ativar ou desativar alto contraste" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
             Alto Contraste
         </button>
@@ -27,7 +31,7 @@
                 if (localStorage.getItem("highContrast") === "true") {
                     document.body.classList.add("high-contrast");
                 }
-        //botao de alto contraste
+        //botao de alto contraste, permite aleterar a cor do texto e fundo
                 const btn = document.getElementById("toggle-contrast");
                 btn.textContent = document.body.classList.contains("high-contrast") ? "Remover Alto Contraste" : "Ativar Alto Contraste";
         
