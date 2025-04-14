@@ -265,4 +265,57 @@ ul {
     background-color: red;
     border-color: #f5c6cb;
     color: white;
+<<<<<<< HEAD
+=======
+}
+
+/* Estilo de Alto Contraste */
+.high-contrast {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+.high-contrast a,
+.high-contrast button,
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast h4,
+.high-contrast h5,
+.high-contrast h6 {
+    color: #FFD700 !important; /* amarelo para links e títulos */
+}
+
+.high-contrast img {
+    filter: brightness(0.8) contrast(1.2);
+}
+/* ===== Estilo de Alto Contraste ===== */
+.high-contrast, .high-contrast * {
+    background-image: none !important;
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.high-contrast a,
+.high-contrast button {
+    background-color: #FFD700 !important; /* amarelo vibrante */
+    color: #000000 !important; /* texto preto sobre amarelo */
+    border: 2px solid #FFF !important;
+}
+
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast h4,
+.high-contrast h5,
+.high-contrast h6 {
+    color: #FFFF00 !important; /* amarelo puro */
+}
+
+.high-contrast img {
+    display: none !important; /* remove todas as imagens visuais */
+>>>>>>> 08bbcce (teste)
 }
