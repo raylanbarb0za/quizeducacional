@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const isActive = document.body.classList.contains("high-contrast");
         localStorage.setItem("highContrast", isActive);
         btn.textContent = isActive
-            ? "Remover Alto Contraste"
+            ? "Desativar Alto Contraste"
             : "Ativar Alto Contraste";
     });
 });
