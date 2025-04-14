@@ -13,6 +13,11 @@ ranking.forEach((item) => {
     }
 });
 
+function limparDados() {
+  localStorage.removeItem('ranking');  // Apaga do armazenamento
+  mostrarRanking();  // Atualiza a tela imediatamente
+  alert('Dados apagados com sucesso! A lista foi atualizada.');
+}
 // Se o ranking estiver vazio
 if (ranking.length === 0) {
     rankingLista.innerHTML = `<li>Nenhum nome adicionado :(</li>`;
