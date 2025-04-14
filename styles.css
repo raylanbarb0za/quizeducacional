@@ -265,11 +265,9 @@ ul {
     background-color: red;
     border-color: #f5c6cb;
     color: white;
-<<<<<<< HEAD
-=======
 }
 
-/* Estilo de Alto Contraste */
+
 .high-contrast {
     background-color: #000 !important;
     color: #FFF !important;
@@ -283,13 +281,13 @@ ul {
 .high-contrast h4,
 .high-contrast h5,
 .high-contrast h6 {
-    color: #FFD700 !important; /* amarelo para links e títulos */
+    color: #FFD700 !important; 
 }
 
 .high-contrast img {
     filter: brightness(0.8) contrast(1.2);
 }
-/* ===== Estilo de Alto Contraste ===== */
+
 .high-contrast, .high-contrast * {
     background-image: none !important;
     background-color: #000000 !important;
@@ -301,8 +299,8 @@ ul {
 
 .high-contrast a,
 .high-contrast button {
-    background-color: #FFD700 !important; /* amarelo vibrante */
-    color: #000000 !important; /* texto preto sobre amarelo */
+    background-color: #FFD700 !important; 
+    color: #000000 !important;
     border: 2px solid #FFF !important;
 }
 
@@ -312,10 +310,9 @@ ul {
 .high-contrast h4,
 .high-contrast h5,
 .high-contrast h6 {
-    color: #FFFF00 !important; /* amarelo puro */
+    color: #FFFF00 !important; 
 }
 
 .high-contrast img {
-    display: none !important; /* remove todas as imagens visuais */
->>>>>>> 08bbcce (teste)
+    display: none !important; 
 }
