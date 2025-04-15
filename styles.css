@@ -72,7 +72,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
-.botoes img {
+.botoes button img {
     width: 21px;
     height: 21px;
 }
