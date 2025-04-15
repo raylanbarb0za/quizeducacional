@@ -86,6 +86,11 @@ body {
     gap: 8px;
 }
 
+.botoes button img {
+    width: 24px;
+    height: 24px;
+}
+
 .pergunta {
     margin-bottom: 20px;
 }
