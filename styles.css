@@ -87,8 +87,8 @@ body {
 }
 
 .botoes button img {
-    width: 24px !important;
-    height: 24px !important;
+    width: 24px; ;
+    height: 24px;
 }
 
 .pergunta {
