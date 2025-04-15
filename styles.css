@@ -72,9 +72,18 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
-.botoes button img {
-    width: 21px;
-    height: 21px;
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botoes button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .pergunta {
