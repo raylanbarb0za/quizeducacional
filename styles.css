@@ -72,12 +72,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
-.botoes button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
 .botoes button img {
     width: 24px;
     height: 24px;
