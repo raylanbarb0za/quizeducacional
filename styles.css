@@ -166,14 +166,6 @@ p {
     color: #ffffff;
 }
 
-.container button {
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
 .container button img {
     width: 20px;
     height: 20px;
