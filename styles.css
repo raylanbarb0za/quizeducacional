@@ -62,8 +62,6 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
     background-color: #1b0342fd;
     padding: 20px;
     border-radius: 15px;
@@ -169,7 +167,6 @@ p {
 }
 
 .container button {
-    display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px 15px;
