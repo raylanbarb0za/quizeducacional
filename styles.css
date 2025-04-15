@@ -62,6 +62,8 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #1b0342fd;
     padding: 20px;
     border-radius: 15px;
