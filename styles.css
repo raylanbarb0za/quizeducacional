@@ -7,7 +7,7 @@ body {
     align-items: center; 
     color: #4d4848; 
     text-align: center;
-    padding: 0; 
+    padding: 20px; 
     margin: 0;
     background-image: url('imagens/imagemnova.png');
     background-size: 100% auto;
@@ -25,8 +25,8 @@ body {
     }
 
     .container {
-        padding: 20px;
-        margin: 10px 0;
+        width: 90%;
+        padding: 20px
     }
 
     h1 {
@@ -72,10 +72,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    padding: 30px;
-    width: 90%;
+    padding: 25px;
+    width: 50%;
     border-radius: 15px;
-    max-width: 700px;
+    max-width: 600px;
     border: 2px solid #3b4234;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
     margin: 20px 0;
