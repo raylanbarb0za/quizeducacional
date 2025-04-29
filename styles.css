@@ -284,5 +284,5 @@ ul {
 }
 
 .high-contrast img {
-    display: none !important; /* remove todas as imagens visuais */
+    display: none !important;
 }
