@@ -5,22 +5,29 @@ body {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    background-color: #ffffff; 
     color: #4d4848; 
     text-align: center;
     padding: 0; 
     margin: 0;
     background-image: url('imagens/imagemnova.png');
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh; 
+    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
 @media (max-width: 768px) {
     body {
         padding: 10px; 
+        background-size: auto 100%;
+    }
+
+    .container {
+        padding: 20px;
+        width: 95%;
+        margin: 10px 0;
     }
 
     h1 {
@@ -36,6 +43,13 @@ body {
 @media (max-width: 480px) {
     body {
         padding: 5px; 
+        background-size: cover;
+    }
+
+    .container {
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
     }
 
     h1 {
@@ -47,19 +61,9 @@ body {
     }
 }
 
-/* Estilos para telas menores (celulares) */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px; 
-        max-width: 90%; 
-    }
-}
-
-/* Estilos para telas muito pequenas */
-@media (max-width: 480px) {
-    .container {
-        padding: 10px; 
-        max-width: 95%; 
+    @media (min-width: 2000px) {
+    body {
+        background-size: 100% 100%; /* Ou contain, dependendo do efeito desejado */
     }
 }
 
@@ -69,12 +73,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    padding: 40px;
-    width: 350px;
+    padding: 30px;
+    width: 90%;
     border-radius: 15px;
     max-width: 700px;
     border: 2px solid #3b4234;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    margin: 20px 0;
 }
 
 .container button {
