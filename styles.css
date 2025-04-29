@@ -20,13 +20,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding: 10px; 
-        background-size: auto 100%;
-    }
-
-    .container {
-        width: 90%;
-        padding: 20px
+        padding: 10px;
     }
 
     h1 {
@@ -42,13 +36,6 @@ body {
 @media (max-width: 480px) {
     body {
         padding: 5px; 
-        background-size: cover;
-    }
-
-    .container {
-        padding: 15px;
-        width: 100%;
-        border-radius: 10px;
     }
 
     h1 {
@@ -60,9 +47,64 @@ body {
     }
 }
 
-    @media (min-width: 2000px) {
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; 
+        max-width: 90%; 
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; 
+        max-width: 95%; 
+    }
+}
+
+@media (max-width: 768px) {
     body {
-        background-size: 100% 100%; /* Ou contain, dependendo do efeito desejado */
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    p {
+        font-size: 16px; 
+    }
+}
+
+/* Estilos para telas muito pequenas (celulares em modo retrato) */
+@media (max-width: 480px) {
+    body {
+        padding: 5px; 
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; 
+        max-width: 90%; 
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; 
+        max-width: 95%; 
     }
 }
 
