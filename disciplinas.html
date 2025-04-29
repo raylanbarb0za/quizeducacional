@@ -9,28 +9,24 @@
 <body>
     <div class="container">
         <h1>Escolha a Disciplina:</h1>
-        <button onclick="window.location.href='quiz.html?disciplina=portugues'">Português</button>
-        <button onclick="window.location.href='quiz.html?disciplina=matematica'">Matemática</button>
-        <button onclick="window.location.href='quiz.html?disciplina=historia'">História</button>
-        <button onclick="window.location.href='quiz.html?disciplina=geografia'">Geografia</button>
-        <button onclick="window.location.href='quiz.html?disciplina=ensinoreligioso'">Ensino Religioso</button>
-        <button onclick="window.location.href='quiz.html?disciplina=artes'">Artes</button>
+        <div class="botoes">
+            <button onclick="window.location.href='quiz.html?disciplina=portugues'">
+                <img src="imagens/portugues.png" alt="icone de portugues">Português</button>
+            <button onclick="window.location.href='quiz.html?disciplina=matematica'">
+                <img src="imagens/matematica.png" alt="icone de portugues">Matematica</button>
+            <button onclick="window.location.href='quiz.html?disciplina=historia'">
+                <img src="imagens/historia.png" alt="icone de portugues">História</button>
+            <button onclick="window.location.href='quiz.html?disciplina=geografia'">
+                <img src="imagens/geografia.png" alt="icone de portugues">Geografia</button>
+            <button onclick="window.location.href='quiz.html?disciplina=ensinoreligioso'">
+                <img src="imagens/ensinoreligioso.png" alt="icone de portugues">Ensino Religioso</button>
+            <button onclick="window.location.href='quiz.html?disciplina=artes'">
+                <img src="imagens/artes.png" alt="icone de portugues">Artes</button>
+        </div>
     </div>
-    <div>  
-        <button id="voltar-inicio" onclick="window.location.href='index.html'">Voltar ao Início</button>
-    </div>
-<<<<<<< HEAD
-=======
-
-    <button id="toggle-contrast" aria-label="Ativar ou desativar alto contraste" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
-        Alto Contraste
-    </button>
-    <script>
-    document.getElementById("toggle-contrast").addEventListener("click", function () {
-        document.body.classList.toggle("high-contrast");
-    });
-    </script>
-    
->>>>>>> 08bbcce (teste)
+        <div>  
+            <button id="voltar-inicio" onclick="window.location.href='index.html'">Voltar ao Início</button>
+        </div>
+        <script src="altoContraste.js"></script>
 </body>
 </html>

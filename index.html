@@ -6,46 +6,12 @@
     <title>Quiz Educacional</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<<<<<<< HEAD
-=======
-
->>>>>>> 08bbcce (teste)
 <body>
     <div class="container">
         <h1>Quiz Educacional</h1>
         <button onclick="window.location.href='disciplinas.html'">Iniciar</button>
         <button onclick="window.location.href='ranking.html'">Ranking</button>
-<<<<<<< HEAD
-    
-<<<<<<< HEAD
-=======
-=======
-        
->>>>>>> 313c6b6 (mudei o botao de lugar)
-        <button id="toggle-contrast" aria-label="Ativar ou desativar alto contraste" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
-            Alto Contraste
-        </button>
-        <script>
-            // Quando a página carregar, verifica se o usuário deixou o alto contraste ativado
-            window.addEventListener("DOMContentLoaded", function () {
-                if (localStorage.getItem("highContrast") === "true") {
-                    document.body.classList.add("high-contrast");
-                }
-      
-                const btn = document.getElementById("toggle-contrast");
-                btn.textContent = document.body.classList.contains("high-contrast") ? "Remover Alto Contraste" : "Ativar Alto Contraste";
-        
-                //botao de alto constrastee
-                btn.addEventListener("click", function () {
-                    document.body.classList.toggle("high-contrast");
-                    const isActive = document.body.classList.contains("high-contrast");
-                    localStorage.setItem("highContrast", isActive);
-                    btn.textContent = isActive ? "Remover Alto Contraste" : "Ativar Alto Contraste";
-                });
-
-            });
-        </script>
-    
->>>>>>> 08bbcce (teste)
+    </div>
+        <script src="altoContraste.js"></script>
 </body>
 </html>

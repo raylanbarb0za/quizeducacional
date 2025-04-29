@@ -72,6 +72,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
+.botoes button img {
+    width: 24px;
+    height: 24px;
+}
+
 .pergunta {
     margin-bottom: 20px;
 }
@@ -91,14 +96,6 @@ label {
 
 label:hover {
     background-color: #e9e9e9;
-}
-
-input[type="radio"] {
-    margin-right: 10px;
-}
-
-input#senha-admin {
-    max-width: 180px;
 }
 
 .nome-aluno {
@@ -228,33 +225,6 @@ ul {
     color: #ccc;
 }
 
-#admin-login {
-    margin-top: 10px;
-}
-
-#admin-login input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 1px;
-}
-
-#admin-login button {
-    padding: 8px 10px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#admin-login button:hover {
-    background-color: #0056b3;
-}
-
 .resposta-correta {
     background-color: green;
     border-color: #c3e6cb;
@@ -265,11 +235,9 @@ ul {
     background-color: red;
     border-color: #f5c6cb;
     color: white;
-<<<<<<< HEAD
-=======
 }
 
-/* Estilo de Alto Contraste */
+
 .high-contrast {
     background-color: #000 !important;
     color: #FFF !important;
@@ -283,13 +251,13 @@ ul {
 .high-contrast h4,
 .high-contrast h5,
 .high-contrast h6 {
-    color: #FFD700 !important; /* amarelo para links e títulos */
+    color: #FFD700 !important; 
 }
 
 .high-contrast img {
     filter: brightness(0.8) contrast(1.2);
 }
-/* ===== Estilo de Alto Contraste ===== */
+
 .high-contrast, .high-contrast * {
     background-image: none !important;
     background-color: #000000 !important;
@@ -301,8 +269,8 @@ ul {
 
 .high-contrast a,
 .high-contrast button {
-    background-color: #FFD700 !important; /* amarelo vibrante */
-    color: #000000 !important; /* texto preto sobre amarelo */
+    background-color: #FFD700 !important; 
+    color: #000000 !important;
     border: 2px solid #FFF !important;
 }
 
@@ -312,10 +280,9 @@ ul {
 .high-contrast h4,
 .high-contrast h5,
 .high-contrast h6 {
-    color: #FFFF00 !important; /* amarelo puro */
+    color: #FFFF00 !important; 
 }
 
 .high-contrast img {
     display: none !important; /* remove todas as imagens visuais */
->>>>>>> 08bbcce (teste)
 }
