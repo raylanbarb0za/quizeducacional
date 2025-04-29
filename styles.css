@@ -3,7 +3,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: center; 
     align-items: center; 
     color: #4d4848; 
     text-align: center;
