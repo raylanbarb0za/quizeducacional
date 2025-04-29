@@ -7,7 +7,7 @@ body {
     align-items: center; 
     color: #4d4848; 
     text-align: center;
-    padding: 20px; 
+    padding: 0; 
     margin: 0;
     background-image: url('imagens/imagemnova.png');
     background-size: 100% auto;
@@ -120,7 +120,6 @@ body {
     max-width: 500px;
     border: 2px solid #3b4234;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    margin: 20px 0;
 }
 
 .container button {
