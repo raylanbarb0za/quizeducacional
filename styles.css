@@ -14,15 +14,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 80vh;
+    min-height: 90vh;
     background-color: #f0f0f0;
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
     h1 {
         font-size: 24px; 
     }
@@ -34,10 +30,6 @@ body {
 
 /* Estilos para telas muito pequenas (celulares em modo retrato) */
 @media (max-width: 480px) {
-    body {
-        padding: 5px; 
-    }
-
     h1 {
         font-size: 20px; 
     }
@@ -47,66 +39,20 @@ body {
     }
 }
 
-/* Estilos para telas menores (celulares) */
-@media (max-width: 768px) {
+@media (min-width: 480px){
     .container {
-        padding: 15px; 
-        max-width: 90%; 
+        width: 70%;
+        padding: 25px;
     }
 }
 
-/* Estilos para telas muito pequenas */
-@media (max-width: 480px) {
+@media (min-width: 768px){
     .container {
-        padding: 10px; 
-        max-width: 95%; 
+        width: 60%;
+        padding: 30px;
     }
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 10px; 
-    }
-
-    h1 {
-        font-size: 24px; 
-    }
-
-    p {
-        font-size: 16px; 
-    }
-}
-
-/* Estilos para telas muito pequenas (celulares em modo retrato) */
-@media (max-width: 480px) {
-    body {
-        padding: 5px; 
-    }
-
-    h1 {
-        font-size: 20px; 
-    }
-
-    p {
-        font-size: 14px;
-    }
-}
-
-/* Estilos para telas menores (celulares) */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px; 
-        max-width: 90%; 
-    }
-}
-
-/* Estilos para telas muito pequenas */
-@media (max-width: 480px) {
-    .container {
-        padding: 10px; 
-        max-width: 95%; 
-    }
-}
 
 .container {
     background-color: #002366;
@@ -114,9 +60,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    padding: 30px;
-    width: 40%;
-    margin-top: 100px;
+    padding: 25px;
+    width: 70%;
+    margin-top: 20px;
     border-radius: 15px;
     max-width: 500px;
     border: 2px solid #ffffff;
