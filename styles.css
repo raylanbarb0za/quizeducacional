@@ -49,7 +49,7 @@ body {
 
 
 .container {
-    background-color: #002366;
+    background-color: #05a1ad;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -84,7 +84,7 @@ label {
     border: 1px solid #ffffff;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #ffd105;
+    background-color: #dceb5b;
     text-align: left;
     transition: background-color 0.3s;
 }
@@ -102,7 +102,7 @@ label, p {
 }
 
 button {
-    background-color: #008aa6; 
+    background-color: #1f0cf6; 
     color: white;
     border: none;
     border-radius: 10px; 
@@ -123,6 +123,8 @@ button:hover {
 #ranking-lista {
     list-style-type: none; 
     padding: 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 input#nome-aluno {

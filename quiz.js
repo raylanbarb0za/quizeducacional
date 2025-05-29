@@ -8,14 +8,25 @@ const disciplinasFormatadas = {
     historia: "História",
     geografia: "Geografia",
     artes: "Artes",
-    ensinoreligioso: "Ensino Religioso"
+    ensinoreligioso: "Ensino Religioso",
+    ingles: "Inglês"
 };
 
 const quizzes = {
     portugues: [
         {
+            pergunta: "Qual é o plural de 'caderno'?",
+            respostas: ["Cadernos", "Cadernas", "Cadernoses", "Cadernas"],
+            respostaCorreta: "Cadernos"
+        },
+        {
+            pergunta: "Qual é o significado da palavra 'gigante'?",
+            respostas: ["Muito pequeno", "Muito antigo", "Muito grande", "Muito rápido"],
+            respostaCorreta: "Muito grande"
+        },
+        {
             pergunta: "Qual é o plural de 'casa'?",
-            respostas: ["Casa", "Casas", "Casos", "Casinhas"],
+            respostas: ["casa", "casas", "casos", "casinhas"],
             respostaCorreta: "Casas"
         },
         {
@@ -40,8 +51,8 @@ const quizzes = {
         },
         {
             pergunta: "Qual é o plural de 'cão'?",
-            respostas: ["Cães", "Cão", "Cãos", "Cainhos"],
-            respostaCorreta: "Cães"
+            respostas: ["cães", "cão", "cãos", "cainhos"],
+            respostaCorreta: "cães"
         },
         {
             pergunta: "Complete: A menina _____ o livro.",
@@ -65,8 +76,8 @@ const quizzes = {
         },
         {
             pergunta: "Qual é o plural de 'flor'?",
-            respostas: ["Flores", "Flor", "Floris", "Florz"],
-            respostaCorreta: "Flores"
+            respostas: ["flores", "flor", "floris", "florz"],
+            respostaCorreta: "flores"
         },
         {
             pergunta: "Complete: O sol _____ no horizonte.",
@@ -90,6 +101,21 @@ const quizzes = {
         }
     ],
     matematica: [
+        {
+            pergunta: "Quanto é 7 × 6?",
+            respostas: ["42", "36", "48", "56"],
+            respostaCorreta: "42"
+        },
+        {
+            pergunta: "Qual número completa a sequência? 2, 4, 6, __, 10",
+            respostas: ["7", "8", "9", "12"],
+            respostaCorreta: "8"
+        },
+        {
+            pergunta: "Se João tem 12 balas e dá 5 para Ana, com quantas ele fica?",
+            respostas: ["5", "7", "17", "6"],
+            respostaCorreta: "7"
+        },
         {
             pergunta: "Quanto é 2 + 2?",
             respostas: ["3", "4", "5", "6"],
@@ -245,6 +271,21 @@ const quizzes = {
     ],
     geografia: [
         {
+            pergunta: "Qual é o maior oceano do mundo?",
+            respostas: ["Atlântico", "Índico", "Pacífico", "Ártico"],
+            respostaCorreta: "Pacífico"
+        },
+        {
+            pergunta: "Em qual continente fica o Brasil?",
+            respostas: ["África", "Europa", "América do Sul", "Ásia"],
+            respostaCorreta: "América do Sul"
+        },
+        {
+            pergunta: "Qual instrumento mede a temperatura?",
+            respostas: ["Barômetro", "Termômetro", "Higrômetro", "Anemômetro"],
+            respostaCorreta: "Termômetro"
+        },
+        {
             pergunta: "Qual é a capital do Brasil?",
             respostas: ["Rio de Janeiro", "São Paulo", "Brasília", "Belo Horizonte"],
             respostaCorreta: "Brasília"
@@ -395,6 +436,48 @@ const quizzes = {
             pergunta: "Qual é o local sagrado do Judaísmo?",
             respostas: ["Jerusalém", "Meca", "Varanasi", "Roma"],
             respostaCorreta: "Jerusalém"
+        }
+    ],
+    ingles: [
+        {
+            pergunta: "What color is the sky on a sunny day?",
+            respostas: ["Green", "Red", "Blue", "Yellow"],
+            respostaCorreta: "Blue"
+        },
+        {
+            pergunta: "How do you say 'maçã' in English?",
+            respostas: ["Banana", "Apple", "Orange", "Grape"],
+            respostaCorreta: "Apple"
+        },
+        {
+            pergunta: "Which animal says 'meow'?",
+            respostas: ["Dog", "Cat", "Cow", "Bird"],
+            respostaCorreta: "Cat"
+        },
+        {
+            pergunta: "Complete: I _____ a book.",
+            respostas: ["read", "eat", "run", "play"],
+            respostaCorreta: "read"
+        },
+        {
+            pergunta: "What is the opposite of 'big'?",
+            respostas: ["Tall", "Short", "Small", "Fast"],
+            respostaCorreta: "Small"
+        },
+        {
+            pergunta: "Como se diz 'gato' em inglês?",
+            respostas: ["Dog", "Cat", "Bird", "Mouse"],
+            respostaCorreta: "Cat"
+        },
+        {
+            pergunta: "Qual é a forma correta do verbo 'to be' para 'he'?",
+            respostas: ["Are", "Is", "Am", "Be"],
+            respostaCorreta: "Is"
+        },
+        {
+            pergunta: "Complete: She _____ a book every night.",
+            respostas: ["reads", "read", "reading", "is reading"],
+            respostaCorreta: "reads"
         }
     ],
     artes: [
@@ -554,7 +637,35 @@ function carregarPergunta() {
     } else {
 
         // todas as perguntas foram respondidas
-        quizContainer.innerHTML = `<p>Quiz concluído! Você ganhou ${estrelinhas} estrelinhas!</p>`;
+        let mensagemDesempenho = "";
+
+switch (estrelinhas) {
+    case 0:
+        mensagemDesempenho = "😟 Nenhuma resposta correta. Tente novamente!";
+    break;
+    case 1:
+        mensagemDesempenho = "😞 Péssimo. Tente novamente!";
+    break;
+    case 2:
+        mensagemDesempenho = "😐 Ok. Mas você pode melhorar!";
+    break;
+    case 3:
+        mensagemDesempenho = "🙂 Dá pra melhorar!";
+    break;
+    case 4:
+        mensagemDesempenho = "😀 Bom trabalho!";
+    break;
+    case 5:
+        mensagemDesempenho = "🎉 Parabéns! Você arrasou!";
+    break;
+    default:
+        mensagemDesempenho = "Resultado inválido.";
+}
+    quizContainer.innerHTML = `
+    <p>Quiz concluído! Você ganhou ${estrelinhas} ⭐</p>
+    <p style="font-weight: bold; color: #444;">${mensagemDesempenho}</p>
+    `;
+
         proximaPerguntaBtn.style.display = "none";
         caixaNome.style.display = "block"; // exibe a caixa de nome
         localStorage.removeItem('quiz'); // limpa o estado salvo
