@@ -45,11 +45,6 @@ const quizzes = {
             respostaCorreta: "três"
         },
         {
-            pergunta: "Qual é o sinônimo de 'rápido'?",
-            respostas: ["veloz", "lento", "devagar", "calmo"],
-            respostaCorreta: "veloz"
-        },
-        {
             pergunta: "Qual é o plural de 'cão'?",
             respostas: ["cães", "cão", "cãos", "cainhos"],
             respostaCorreta: "cães"
