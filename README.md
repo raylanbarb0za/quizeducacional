@@ -1,9 +1,8 @@
 📚 Quiz Educacional
 
 Um quiz interativo desenvolvido em **JavaScript puro**, com temporizador e feedback visual, projetado para testar conhecimentos de forma dinâmica e educativa.  
-
-🔗 **Link do Projeto**: (https://raylanbarb0za.github.io/quizeducacional/)  
-📌 **Status**: Em processo   
+ 
+📌 **Status**: Finalizado
 
 
 ## **📌 Visão Geral**  
